@@ -9,8 +9,11 @@ function toggleMenu() {
 function toggleMode() {
     const toggle = document.querySelector('.toggleDark');
     const body = document.querySelector('body');
-    const hamburger = document.querySelector('.menu-links');
+    const menuLinks = document.querySelector('.menu-links');
     const links = document.querySelectorAll('a');
+    const sc = document.getElementById('socials-container');
+    const hamburgerSpans = document.querySelectorAll('.hamburger-icon span');
+    const scDark = document.getElementById('socials-container-dark');
     toggle.classList.toggle('bi-moon');
         if(toggle.classList.toggle('bi-brightness-high-fill')){
             body.style.background = 'white';
@@ -18,17 +21,25 @@ function toggleMode() {
             body.style.transition = '2s';
             links.forEach(link => link.style.color = 'black');
             links.forEach(link => link.style.transition = '2s');
-            hamburger.style.background = 'white';
-            hamburger.style.transition = '2s';
+            menuLinks.style.background = 'white';
+            menuLinks.style.transition = '2s';
+            scDark.style.display = 'block';
+            sc.style.display = 'none';
+            hamburgerSpans.forEach(span => span.style.background = 'black');
+            hamburgerSpans.forEach(span => span.style.transition = '2s');
+            
         }else{
             body.style.background = 'black';
             body.style.color = 'white';
             body.style.transition = '2s';
             links.forEach(link => link.style.color = 'white');
             links.forEach(link => link.style.transition = '2s');
-            hamburger.style.transition = '2s';
-            hamburger.style.background = 'black';
-
+            menuLinks.style.transition = '2s';
+            menuLinks.style.background = 'black';
+            scDark.style.display = 'none';
+            sc.style.display = 'block';
+            hamburgerSpans.forEach(span => span.style.background = 'white');
+            hamburgerSpans.forEach(span => span.style.transition = '2s');
             
         }
 }

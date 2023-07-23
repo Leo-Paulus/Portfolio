@@ -68,6 +68,11 @@ a:hover {
   cursor: default;
 }
 
+/*socials-container-dark-mode*/
+#socials-container-dark {
+  display: none;
+}
+
 /* Hamburger menu */
 
 #hamburger-nav {
