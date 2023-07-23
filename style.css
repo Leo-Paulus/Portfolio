@@ -58,6 +58,12 @@ a:hover {
   font-size: 2rem;
 }
 
+.toggleDark {
+  font-size: 40px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
 .logo:hover {
   cursor: default;
 }
@@ -233,7 +239,7 @@ section {
 }
 
 .btn-color-2 {
-  background: none;
+  background: white;
 }
 .btn-color-2:hover {
   border: rbg(255, 255, 255) 0.1rem solid;

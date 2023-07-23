@@ -6,3 +6,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .section__pic {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+/*TODO: when resolution is lower than 650, the picture should position above the text*/
