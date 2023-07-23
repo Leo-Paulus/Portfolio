@@ -1,6 +1,8 @@
 function toggleMenu() {
     const menu = document.querySelector('.menu-links');
     const icon = document.querySelector('.hamburger-icon');
+    const menuLinks = document.querySelector('.menu-links');
+    menuLinks.style.transition= '0.5s';
     menu.classList.toggle('open');
     icon.classList.toggle('open');
 }
@@ -17,16 +19,15 @@ function toggleMode() {
     toggle.classList.toggle('bi-moon');
         if(toggle.classList.toggle('bi-brightness-high-fill')){
             body.style.background = 'white';
-            body.style.color = 'black';
             body.style.transition = '2s';
+            body.style.color = 'black';
             links.forEach(link => link.style.color = 'black');
             links.forEach(link => link.style.transition = '2s');
             menuLinks.style.background = 'white';
-            menuLinks.style.transition = '2s';
             scDark.style.display = 'block';
             sc.style.display = 'none';
             hamburgerSpans.forEach(span => span.style.background = 'black');
-            hamburgerSpans.forEach(span => span.style.transition = '2s');
+            hamburgerSpans.forEach(span => span.style.transition = '0s');
             
         }else{
             body.style.background = 'black';
@@ -34,12 +35,12 @@ function toggleMode() {
             body.style.transition = '2s';
             links.forEach(link => link.style.color = 'white');
             links.forEach(link => link.style.transition = '2s');
-            menuLinks.style.transition = '2s';
+            menuLinks.style.transition= '2s';
             menuLinks.style.background = 'black';
             scDark.style.display = 'none';
             sc.style.display = 'block';
             hamburgerSpans.forEach(span => span.style.background = 'white');
-            hamburgerSpans.forEach(span => span.style.transition = '2s');
+            hamburgerSpans.forEach(span => span.style.transition = '0s');
             
         }
 }
