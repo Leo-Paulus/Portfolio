@@ -12,7 +12,7 @@ function toggleMode() {
     const toggle = document.querySelector('.toggleDark');
     const body = document.querySelector('body');
     const menuLinks = document.querySelector('.menu-links');
-    const links = document.querySelectorAll('a');
+    const links = document.querySelectorAll('.menu-text');
     const sc = document.getElementById('socials-container');
     const hamburgerSpans = document.querySelectorAll('.hamburger-icon span');
     const scDark = document.getElementById('socials-container-dark');
